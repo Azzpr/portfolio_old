@@ -18,8 +18,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="works">
-                <a className="hover:text-primary">Works</a>
+              <Link href="projects">
+                <a className="hover:text-primary">Projects</a>
               </Link>
             </li>
             <li>
