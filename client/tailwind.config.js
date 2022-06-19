@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        navbar: ["Poppins"],
+        text: ["Lato"],
+      },
       colors: {
         primary: "#5e3aee",
         secondary: "#bdbbbb",
