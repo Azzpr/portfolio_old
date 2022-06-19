@@ -8,19 +8,23 @@ const Projects: NextPage = () => {
       <Head>
         <title>Portfolio - Projects</title>
       </Head>
-      <main className="flex flex-col w-full">
-        <h1 className="text-2xl xl:text-2xl xl:w-3/6 mb-2 lg:text-2xl md:text-2xl sm:text-42xl  font-bold w-4/6  tracking-wide">
+      <main className="flex flex-col w-full pt-[5%] pl-[10%]">
+        <h1 className="text-2xl xl:text-2xl xl:w-3/6 mb-2 lg:text-2xl md:text-2xl sm:text-2xl  font-bold w-4/6  tracking-wide">
           Featured
         </h1>
         <div className="projects flex flex-col">
           {/* project */}
           <Card
-            title=" Company website for Tusvik Pulverlakk, a Norwegian color powder company"
-            description="This project was made for Norwegian based color powder comany. The project was developed with the JavaScript framework Next.js, a framework that is built on top of React.js."
+            title="Company website for Tusvik Pulverlakk, a Norwegian color powder company"
+            description="This website was made for a Norwegian-based color powder company. The project was developed with the JavaScript framework Next.js."
             url="tusvik.png"
           />
           {/* project */}
-          <Card title="Bug tracker and analyser" url="bugg.png" />
+          <Card
+            title="Bug tracker and analyser"
+            description="A bug tracker and analyser used for detecting and categorizing bugs and errors before the project is shipped to production."
+            url="bugg.png"
+          />
         </div>
       </main>
     </div>

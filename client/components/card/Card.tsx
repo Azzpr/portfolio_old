@@ -1,22 +1,42 @@
 import React from "react";
 import Link from "next/router";
 
-const Card = (props) => {
+const Card = (props: {
+  url: string | undefined;
+  title:
+    | string
+    | number
+    | boolean
+    | React.ReactElement<any, string | React.JSXElementConstructor<any>>
+    | React.ReactFragment
+    | React.ReactPortal
+    | null
+    | undefined;
+  description:
+    | string
+    | number
+    | boolean
+    | React.ReactElement<any, string | React.JSXElementConstructor<any>>
+    | React.ReactFragment
+    | React.ReactPortal
+    | null
+    | undefined;
+}) => {
   return (
-    <div className="project pb-2 hover:shadow-sm  xl:max-h-32 lg:max-h-32 md:max-h-38 sm:max-h-42 mb-2 hover:cursor-pointer bg-white w-[90%] p-4 rounded-md flex">
-      <div className="img mr-2 h-full">
+    <div className="project pb-4 pt-4 hover:shadow-sm    mb-2 hover:cursor-pointer bg-white w-[90%] p-4 rounded-md flex">
+      <div className="img mr-2 self-center h-20">
         <img
           src={props.url}
           alt="pic"
-          className=" h-full object-cover rounded-md"
+          className="  h-full min-w-[130px] object-cover  rounded-md"
         />
       </div>
 
-      <div className="info flex flex-col">
+      <div className="info flex ml-4 flex-col justify-between">
         <h2 className="font-bold text-primary ">{props.title}</h2>
         <p>{props.description}</p>
-        <div className="links flex self-start w-14 text-secondary ">
-          <ul className="flex w-full justify-between">
+        <div className="links flex self-start w-14 text-secondary  ">
+          <ul className="flex w-full justify-between mt-2">
             <li>
               <a href={"https://github.com"}>
                 <svg
